@@ -1013,14 +1013,17 @@
   <!-- <div id="preloader"></div> -->
 
   <!-- JavaScript Libraries -->
-  <script src="typed.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
   <script>
-    var typed = new Typed('#typed',{
-                    stringsElement: '#typed-strings',
-                    backSpeed: 40,
-                    typeSpeed: 40,
-                    loopt: true;
-                  });
+    // Can also be included with a regular script tag
+import Typed from 'typed.js';
+
+var options = {
+  strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
+  typeSpeed: 40
+};
+
+var typed = new Typed('.element', options);
   </script>
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
