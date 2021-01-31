@@ -138,8 +138,15 @@
 
           <div class="col-lg-7 col-md-6">
             <div class="about-content">
-              <h2>Meet <span class="wave">'KD'</span></h2>
-              <h3>Linkedin Top Sales Voice 2020 ~ SaaS Sales Consultant ~ Sales Dev. Exec of the Year ~ InsideSales Top 10 Sales Leader ~ Avid Swearer</h3>
+              <h2>Meet <span class="wave">'KD'</span></h2>    
+          <div id="typed-strings2">
+              <h2><strong>~ Linkedin Top Sales Voice 2020 ~</strong></h2>
+              <h2><strong>~ SaaS Sales Consultant ~</strong></h2>
+              <h2><strong>~ Sales Dev. Exec. of the Year ~</strong></h2>
+              <h2><strong>~ InsideSales Top 10 Sales Leader ~</strong></h2>
+              <h2><strong>~ Avid Swearer ~</strong></h2>
+          </div>
+          <span id="typed2"></span>
               <p>Formal Education will make you a living, Self Education will make you a fortune. ~ Jim Rohn</p>
               <p>As I've grown as a leader I have a better understanding of what truly drives behavior, motivation, and long term success. If we can make better people, the sales will follow.</p>
               <ul>
@@ -976,6 +983,16 @@
 	<script>
 		var typed1 = new Typed('#typed1', {
     		stringsElement: '#typed-strings1',
+		typeSpeed: 48,
+		backSpeed: 24,
+		fadeOut: false,
+    		loop: true
+  		});
+	</script>
+	
+	<script>
+		var typed2 = new Typed('#typed2', {
+    		stringsElement: '#typed-strings2',
 		typeSpeed: 48,
 		backSpeed: 24,
 		fadeOut: false,
